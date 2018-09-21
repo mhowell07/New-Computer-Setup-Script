@@ -8,3 +8,6 @@ sudo apt-get install -y nodejs
 
 # Install npm
 sudo apt-get install -y npm
+
+# Install NGINX
+sudo apt-get install -y nginx
