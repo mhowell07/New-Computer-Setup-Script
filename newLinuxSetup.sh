@@ -29,3 +29,15 @@ source ~/.rvm/scripts/rvm
 
 # Install the latest stable versin of ruby with rvm
 rvm install ruby --default
+
+# Import the Public Key for MongoDB
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+
+# Create source list file for MongoDB
+echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+
+# Update the repository
+sudo apt-get update
+
+# Install MongoDB
+sudo apt-get install -y mongodb-org
